@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/all.css" type="text/css" />
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<!--[if lte IE 8]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<br>
+				<br>
+				<div class="col-xs-8 col-xs-offset-2" ng-controller="HeaderController">
+					<h1 class="text-center">первый вариант</h1>
+					<div class="text-tools text-center">
+						<a ng-click="showText = ! showText" href="#" class="btn btn-primary">toggle content</a>
+					</div>
+					<br>
+					<div class="text" ng-hide="showText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ab tenetur iusto soluta nesciunt neque molestiae quaerat recusandae doloribus, minus optio velit doloremque earum quisquam, nam reiciendis voluptates praesentium magni id consectetur animi perspiciatis magnam modi, similique. Error explicabo ea veritatis, repellendus quaerat ipsa eaque unde aut nam quo, fugiat voluptatibus ullam? Inventore sunt nemo possimus voluptatem, corporis, fugit dignissimos atque voluptatibus libero ducimus tempora fuga, eius voluptate ab. Iusto aut deserunt, illum nemo veniam quod alias velit. Veritatis labore molestiae quidem architecto repellendus dignissimos, sapiente expedita exercitationem at nemo molestias earum eum rem blanditiis ea vitae, eveniet mollitia assumenda?</div>
+					<h1 class="text-center">Второй вариант</h1>
+					<div class="text-tools text-center">
+						<a ng-click="showText2();" href="#" class="btn btn-primary">toggle content</a>
+					</div>
+					<br>
+					<div class="text" ng-if="!hidetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ab tenetur iusto soluta nesciunt neque molestiae quaerat recusandae doloribus, minus optio velit doloremque earum quisquam, nam reiciendis voluptates praesentium magni id consectetur animi perspiciatis magnam modi, similique. Error explicabo ea veritatis, repellendus quaerat ipsa eaque unde aut nam quo, fugiat voluptatibus ullam? Inventore sunt nemo possimus voluptatem, corporis, fugit dignissimos atque voluptatibus libero ducimus tempora fuga, eius voluptate ab. Iusto aut deserunt, illum nemo veniam quod alias velit. Veritatis labore molestiae quidem architecto repellendus dignissimos, sapiente expedita exercitationem at nemo molestias earum eum rem blanditiis ea vitae, eveniet mollitia assumenda?</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
